@@ -5,7 +5,7 @@ TypeScript SDK for [Flect](https://flect.run) — access databases, KV stores, a
 ## Install
 
 ```bash
-npm install @flect/sdk
+npm install @dotlabshq/flect-sdk
 ```
 
 ## Usage
