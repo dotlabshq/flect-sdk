@@ -1,0 +1,42 @@
+{
+  "name": "@flect/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Flect — database, KV, and object store bindings",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1076.0",
+    "@aws-sdk/s3-request-presigner": "^3.1076.0",
+    "@libsql/client": "^0.14.0",
+    "ioredis": "^5.10.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["flect", "sdk", "s3", "sqlite", "kv"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotlabshq/flect"
+  }
+}
