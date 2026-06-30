@@ -1,6 +1,7 @@
 import { createDbClient, type DbClient } from './db.js'
 import { createKvClient, type KvClient } from './kv.js'
 import { createStoreClient, type StoreClient } from './store.js'
+export { runMigrations } from './migrate.js'
 
 export type { DbClient, KvClient, StoreClient }
 
