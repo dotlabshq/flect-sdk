@@ -35,4 +35,4 @@ Bindings are configured in `flect.toml` and env vars are injected automatically 
 
 ## Docs
 
-[flect.run/docs](https://flect.run/docs)
+[flect.run/docs](https://docs.flect.cloud)
